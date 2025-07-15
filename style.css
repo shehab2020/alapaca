@@ -1,5 +1,199 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.alpacaGenerator{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FE7743;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.alpacaHeader{
+    margin: 0 0 40px 40px;
+    color: #273F4F;
+    font-size: 2.5rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    height: 100%;
+}
+.imgrend{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid #273F4F;
+    margin: 0 0 20px 0;
+}
+.alpacabackgrounds{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 0;
+}
+.alpacaneck{
+    width: 300px;
+    height:300px;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    z-index: 1 ;
+}
+.alpacanose{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -20px;
+    left: -22px;
+    z-index: 2;
+}
+.alpacaeyes{
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    top: -18px;
+    left: -20px;
+    z-index: 7;
+}
+.alpacaears{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    z-index: 3;
+}
+.alpacahair{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    z-index: 4;
+}
+.alpacaaccessories{
+    width: 300px;
+    height: 320px;
+    position: absolute;
+    top: -10px;
+    left: -24px;
+    z-index: 5;
+}
+.alpacaleg{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
+    z-index: 8;
+}
+.alpacamouth{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -20px;
+    left: -22px;
+    z-index: 6;
+}
+.imgstyl{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.alpacaParts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.alpacaPart{
+    font-size: 1rem;
+    color: #273F4F;
+    border: 2px solid #273F4F;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px 30px;
+}
+.active{
+    background-color: #273F4F;
+    border: 2px solid #273F4F !important;
+    color: #ffffff !important;
+    cursor: pointer;
+}
+.alpacaPart:hover{
+   cursor: pointer;
+}
+.partStyles{
+     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.partStyle{
+    font-size: 1rem;
+    color: #273F4F;
+    border: 2px solid #273F4F;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px 30px;
+}
+.partStyle:hover{
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 140px;
+    height: 40px;
+    background-color: #273F4F;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgrend, .imgstyl{
+        width: 100%;
+        height: auto;
+    }
 }
